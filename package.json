@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www",
-    "build": "tsc",
-    "test": "jest",
-    "compile": "yarn tsc -w"
+    "dev": "nodemon ../dist/app",
+    "build": "tsc -p",
+    "test": "jest --watchAll --verbose"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
